@@ -1,0 +1,747 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+/*NAV MENU CSS*/
+li{
+	list-style: none;
+	display: flex;
+
+}
+
+.logo{
+	width: 100%;
+	height: 30px;
+	padding-top: 20px;
+	margin-right: 40px;
+}
+header{
+	background: black;
+	padding: 5px 0;
+	height: 80px;
+	position: sticky;
+	top:0;
+	z-index: 1020;
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.container a{
+	width: 100%;
+	color: #fafafa;
+	font-size: 16px;
+	margin-right: 35px;
+	padding: 25px 6px;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+
+}
+.container a:hover{
+	background-color: white;
+	color: black;
+}
+#menu-checkbox{
+	display: none;
+}
+
+ul{
+	display: flex;
+	justify-content: center;
+}
+nav{
+	margin-top: -25px;
+	height: 70px;
+}
+/*CAROUSEL ITEMS CSS*/
+.maga1{
+  height: 100%;
+  width: 100%;
+  background: url(img/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maga2{
+  height: 100%;
+  width: 100%;
+  background: url(img/2.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+.maga3{
+  height: 100%;
+  width: 100%;
+  background: url(img/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item{
+  background-color: red;
+  height: 577px;
+}
+.keev{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;   
+  background: rgba(1, 1, 1, 0.7);
+  height: 300px;
+  width: 70%;
+  
+  border-radius: 5px;
+}
+.carousel-control-prev{
+  left: -60px;
+}
+.carousel-control-next{
+  right: -60px;
+}
+.carousel-indicators li{
+  border-radius: 10px;
+  height: 15px;
+  width: 15px;
+  background-color: #fafafa;
+}
+.carousel-indicators .active{
+  background-color: gray;
+}
+
+/*MAIN CSS*/
+.index-block{
+	position: relative;
+	
+}
+.text1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: url("https://stelsbicycle.ru/local/templates/.default/public/img/index-block.jpg");
+	background-size: cover;
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	width: 440px;
+}
+.name{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.image{
+	float: right;
+	width: 50%;
+	opacity: 0.55;
+	transition: background-image 0.1s ease-in-out;
+}
+.image:hover{
+	
+	
+	opacity: 1;
+	
+}
+.index-block .image img{
+	opacity: 0;
+	width: 100%;
+}
+.index-block:nth-child(even) .image{
+	float: left;
+}
+.index-block:nth-child(even) .text1{
+	left: auto;
+	right: 0;
+}
+.index-block .text1 .content button{
+	margin-top: 20px;
+	border: 1px solid #000;
+	border-bottom: 3px solid #000;
+	cursor: pointer;
+	font-size: 18px;
+	text-transform: uppercase;
+	background: none;
+	border-radius: 3px;
+	padding: 10px 40px;
+}
+.index-block .text1 .content button:hover{
+		background: #97d700;
+	}
+.grow{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 90px;
+	width: 100%;
+}
+.trow{
+	width: 48%;
+	height: 400px;
+	
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-bottom: 50px;
+	background-color: white;
+}
+#map{
+	width: 100%;
+	height: 100%;
+}
+.verf{
+	margin-top: 50px;
+}
+/*PODPISKA CSS*/
+.podpiska{
+	background-color: #97d700;
+	height: 195px;
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif; 
+	margin-top: 50px;
+}
+.podpiska1{
+	background-color: #97d700;
+	height: 195px;
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.w100{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.mail{
+	margin-top: 5px;
+	border: 1px solid black;
+	border-bottom: 3px solid black;
+	cursor: pointer;
+	color: #fff;
+	background: #000;
+	border-radius: 3px;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-size: 14px; 
+}
+.mail:hover{
+	background: #97d700;
+	color: black;
+}
+footer{
+	margin-top: -70px;
+}
+/*MEDIA QUERY*/
+@media screen and (max-width: 560px){
+	.container{
+		max-width: 1100px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+	}
+	.main-menu{
+		display: none;
+	}
+	.main-menu li{
+		width: 100%;
+		display: block;
+		font-size: 12px;
+		text-align: center;
+	}
+	.main-menu a{
+		display: block;
+		padding: 8px;
+		text-decoration: none;
+		text-align: center;
+	}
+	.toggle-button{
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		color: #000;
+		margin-top: 35px;
+		background: url("https://stelsbicycle.ru/local/templates/.default/public/img/menu-button.jpg");
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: center;  
+
+	}
+	.toggle-button:after{
+		content: attr(data-open);
+		display: block;
+	}
+	.logo{
+		height: 35px;
+	}
+	header{
+		height: 50px!important;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+  /* когда чекбокс активен меню становится видимым */
+  		display: block;
+  		background-color: black;
+  		width: 100%;
+  		margin-top: 35px;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+	  content: attr(data-close);
+	  background: url(https://stelsbicycle.ru/local/templates/.default/public/img/menu-button_a.jpg);
+	  background-repeat: no-repeat;
+	  background-position-x: center; 
+	  background-color-y: center;
+	}
+}
+@media screen and (max-width: 780px){
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.logo{
+		display: flex;
+		justify-content: center;
+		padding-top: 10px;
+		height: 35px;
+	}
+	header{
+		height: 119px!important;
+	}
+	
+	nav{
+		padding-top: 15px;
+	}
+	.main-menu{
+		margin-top: -8px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.index-block .image{
+		float: none !important;
+		width: auto;
+		z-index: 2;
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.index-block .text1{
+		position: relative;
+		left: auto;
+		right: auto;
+		top: auto;
+		width: auto;
+		height: 300px;
+		margin-bottom: 20px;
+	}
+	.grow{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.trow{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 507px){
+	.podpiska{
+		height: 270px;
+	}
+	}
+	@media screen and (max-width: 686px){
+	.cart-row{
+		flex-direction: column;
+	}
+	.cart-items{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.cart-items .cart-row:last-child .cart-column {
+		border-bottom: 1px solid black;
+	}
+	.cart-items .cart-row:last-child .cart-column:last-child {
+		border-bottom: none;
+	}
+	.cart-row:last-child .cart-column {
+	border-bottom: 1px solid black;
+	}
+	}
+	
+/**/
+/**/
+/**/
+/**/
+	/*Veliki.html*/
+				.nav ul {
+				margin: 0;
+				}
+
+				.nav li {
+				display: inline;
+				}
+
+				.nav a {
+				display: inline-block;
+				padding: .5em;
+				color: white;
+				text-decoration: none;
+				}
+
+				.main-nav {
+				text-align: center;
+				font-size: 1.1em;
+				font-weight: lighter;
+				border-bottom: 1px solid rgba(255, 255, 255, .3)
+				}
+
+				.main-nav li {
+				padding: 0 5%;
+				}
+
+				.nav a:hover {
+				background-color: rgba(255, 255, 255, .3)
+				}
+
+				.main-header {
+				background-color: rgba(0, 0, 0, .6);
+				background-blend-mode: multiply;
+				background-size: cover;
+				padding-bottom: 30px;
+				}
+
+				.band-name {
+				text-align: center;
+				margin: 0;
+				font-size: 4em;
+				font-weight: normal;
+				color: white;
+				}
+
+				.band-name-large {
+				font-size: 8em;
+				}
+
+				.content-section {
+				margin: 1em;
+				}
+
+				.container {
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 0 1.5em;
+				}
+				.section-header {
+				font-weight: normal;
+				color: #333;
+				text-align: center;
+				font-size: 2.5em;
+				}
+
+				.about-band-image {
+				float: left;
+				height: 200px;
+				width: 200px;
+				margin: 15px;
+				border-radius: 50%;
+				}
+
+				.main-footer {
+				background-color: #56CCF2;
+				color: white;
+				padding: .25em 0;
+				}
+
+				.main-footer-container {
+				display: flex;
+				align-items: center;
+				}
+
+				.main-footer-container ul {
+				flex-grow: 1;
+				text-align: end;
+				}
+
+				.footer-nav li {
+				padding: 0 .5em;
+				}
+
+				.footer-nav img {
+				width: 30px;
+				height: 30px;
+				}
+
+				.btn {
+				text-align: center;
+				vertical-align: middle;
+				padding: .67em .67em;
+				cursor: pointer;
+				}
+
+				.btn-header {
+				margin: .5em 15% 2em 15%;
+				color: white;
+				border: 2px solid #2D9CDB;
+				background-color: rgba(255, 255, 255, .1);
+				border-radius: 0;
+				font-size: 1.5em;
+				font-weight: lighter;
+				padding-left: 2em;
+				padding-right: 2em;
+				}
+
+				.btn-header:hover {
+				background-color: rgba(255, 255, 255, .3);
+				}
+
+				.btn-play {
+				display: block;
+				margin: 0 auto;
+				color: #2D9CDB;
+				font-size: 4em;
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+				padding: 0;
+				text-align: center;
+				}
+
+				.btn-primary {
+				color: white;
+				background-color: #56CCF2;
+				border: none;
+				border-radius: .3em;
+				font-weight: bold;
+				}
+
+				.btn-primary:hover {
+				background-color: #2D9CDB;
+				}
+
+				.tour-row {
+				border-bottom: 1px solid black;
+				padding-bottom: 1em;
+				margin-bottom: 1em;
+				}
+
+				.tour-row:last-child {
+				border: none;
+				}
+
+				.tour-item {
+				display: inline-block;
+				padding-right: .5em;
+				}
+
+				.tour-date {
+				color: #555;
+				width: 11%;
+				font-weight: bold;
+				}
+
+				.tour-city {
+				width: 24%;
+				}
+
+				.tour-arena {
+				width: 42%;
+				}
+
+				.tour-btn {
+				max-width: 19%;
+				}
+
+				.shop-item {
+				margin: 30px;
+				width: 320px;
+				}
+
+				.shop-item-title {
+				display: block;
+				width: 100%;
+				text-align: center;
+				font-weight: bold;
+				font-size: 1.5em;
+				color: #333;
+				margin-bottom: 15px;
+				}
+
+				.shop-item-image {
+				height: 250px;
+				}
+
+				.shop-item-details {
+				display: flex;
+				align-items: center;
+				padding: 5px;
+				}
+
+				.shop-item-price {
+				flex-grow: 1;
+				color: #333;
+				}
+
+				.shop-items {
+				display: flex;
+
+				flex-wrap: wrap;
+				justify-content: space-around;
+				}
+
+				.cart-header {
+				font-weight: bold;
+				font-size: 1.25em;
+				color: #333;
+				}
+
+				.cart-column {
+				display: flex;
+				align-items: center;
+				border-bottom: 1px solid black;
+				margin-right: 1.5em;
+				padding-bottom: 10px;
+				margin-top: 10px;
+				}
+
+				.cart-row {
+				display: flex;
+				}
+
+				.cart-item {
+				width: 45%;
+				}
+
+				.cart-price {
+				width: 20%;
+				font-size: 1.2em;
+				color: #333;
+				}
+
+				.cart-quantity {
+				width: 35%;
+				}
+
+				.cart-item-title {
+				color: #333;
+				margin-left: .5em;
+				font-size: 1.2em;
+				}
+
+				.cart-item-image {
+				width: 75px;
+				height: auto;
+				border-radius: 10px;
+				}
+
+				.btn-danger {
+				color: white;
+				background-color: #EB5757;
+				border: none;
+				border-radius: .3em;
+				font-weight: bold;
+				}
+
+				.btn-danger:hover {
+				background-color: #CC4C4C;
+				}
+
+				.cart-quantity-input {
+				height: 34px;
+				width: 50px;
+				border-radius: 5px;
+				border: 1px solid #56CCF2;
+				background-color: #eee;
+				color: #333;
+				padding: 0;
+				text-align: center;
+				font-size: 1.2em;
+				margin-right: 25px;
+				}
+
+				.cart-row:last-child {
+				border-bottom: 1px solid black;
+				}
+
+				.cart-row:last-child .cart-column {
+				border: none;
+				}
+
+				.cart-total {
+				text-align: end;
+				margin-top: 10px;
+				margin-right: 10px;
+				}
+
+				.cart-total-title {
+				font-weight: bold;
+				font-size: 1.5em;
+				color: black;
+				margin-right: 20px;
+				}
+
+				.cart-total-price {
+				color: #333;
+				font-size: 1.1em;
+				}
+
+				.btn-purchase {
+				display: block;
+				margin: 40px auto 80px auto;
+				 
+				font-size: 1.75em;
+				}
+				.io{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+				}
+				.content-section:nth-child(odd){
+					width: 70%;
+				}
+				.btn:not(:disabled):not(.disabled) {
+				    cursor: pointer;
+				    margin-top: 20px;
+					border: 1px solid #000;
+					border-bottom: 3px solid #000;
+					cursor: pointer;
+					font-size: 18px;
+					text-transform: uppercase;
+					background: none;
+					border-radius: 3px;
+					padding: 10px 40px;
+					color: black;
+				}
+				.btn:not(:disabled):not(.disabled):hover {
+				    cursor: pointer;
+				    margin-top: 20px;
+					border: 1px solid #000;
+					border-bottom: 3px solid #000;
+					cursor: pointer;
+					font-size: 18px;
+					text-transform: uppercase;
+					background: #97d700;
+					border-radius: 3px;
+					padding: 10px 40px;
+					color: black;
+
+				}
